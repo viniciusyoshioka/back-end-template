@@ -8,6 +8,23 @@
         "module": "nodenext",
         "moduleResolution": "nodenext",
         "importHelpers": false,
-        "resolvePackageJsonExports": true
+        "resolvePackageJsonExports": true,
+        "paths": {
+            "~/*": [
+                "./*"
+            ],
+            "@config/*": [
+                "./src/config/*"
+            ],
+            "@database/*": [
+                "./src/database/*"
+            ],
+            "@modules/*": [
+                "./src/modules/*"
+            ],
+            "@utils/*": [
+                "./src/utils/*"
+            ]
+        }
     }
 }
