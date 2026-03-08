@@ -1,8 +1,15 @@
-import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
+import { NestFactory } from '@nestjs/core'
+
+import { EnvConfig, EnvValidator } from '@config/env'
+import { AppModule } from './app.module'
+
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  await app.listen(process.env.PORT ?? 3000);
+  EnvValidator.assertEnvIsValid()
+
+  const app = await NestFactory.create(AppModule)
+  await app.listen(EnvConfig.PORT)
 }
-bootstrap();
+
+
+bootstrap()
