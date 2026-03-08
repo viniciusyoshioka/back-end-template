@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core'
 
 import { EnvConfig, EnvValidator } from '@config/env'
-import { AppModule } from './app.module'
+import { AppModule } from '@modules/app.module'
 
 
 async function bootstrap() {
