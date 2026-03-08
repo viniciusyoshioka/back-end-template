@@ -1,8 +1,16 @@
 import { Module } from '@nestjs/common'
+import { ConfigModule } from '@nestjs/config'
+
+import { EnvConfig } from '@config/env'
+
+
+const configModule = ConfigModule.forRoot({
+  envFilePath: EnvConfig.envFilePath,
+})
 
 
 @Module({
-  imports: [],
+  imports: [configModule],
   exports: [],
   providers: [],
   controllers: [],
