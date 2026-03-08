@@ -1,12 +1,12 @@
 {
-  "extends": "@vinicius1313/tsconfig/tsconfig.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "outDir": "./dist",
-    "incremental": true,
-    "sourceMap": true,
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "resolvePackageJsonExports": true,
-  }
+    "extends": "@vinicius1313/tsconfig/tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": "./dist",
+        "incremental": true,
+        "sourceMap": true,
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "resolvePackageJsonExports": true
+    }
 }
