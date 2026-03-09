@@ -32,12 +32,13 @@ export class EnvValidator {
 
   private static assertPortEnvIsValid(): void {
     const port = process.env['PORT']
+    const portAsNumber = Number(port)
 
     if (typeof port !== 'string') {
       throw new Error('Env "PORT" is required')
     }
 
-    const isValid = isInt(port)
+    const isValid = isInt(portAsNumber)
     if (!isValid) {
       throw new Error(`Value "${port}" is invalid for "PORT" env`)
     }
