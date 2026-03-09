@@ -38,7 +38,7 @@ export class EnvValidator {
     }
 
     const isValid = isInt(port)
-    if (isValid) {
+    if (!isValid) {
       throw new Error(`Value "${port}" is invalid for "PORT" env`)
     }
   }
