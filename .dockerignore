@@ -1,0 +1,15 @@
+.git
+.vscode
+dist
+node_modules
+scripts
+test
+.dockerignore
+.env.development
+.env.test
+.env
+.gitignore
+Containerfile
+eslint.config.js
+jest.config.js
+nest-cli.json
