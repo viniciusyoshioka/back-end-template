@@ -26,7 +26,7 @@ export class EnvValidator {
 
     const isValid = isEnum(environment, Environment)
     if (!isValid) {
-      throw new Error(`Value ${environment} is invalid for "ENVIRONMENT" env`)
+      throw new Error(`Value "${environment}" is invalid for "ENVIRONMENT" env`)
     }
   }
 
@@ -39,7 +39,7 @@ export class EnvValidator {
 
     const isValid = isInt(port)
     if (isValid) {
-      throw new Error(`Value ${port} is invalid for "PORT" env`)
+      throw new Error(`Value "${port}" is invalid for "PORT" env`)
     }
   }
 }
