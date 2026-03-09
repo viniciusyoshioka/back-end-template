@@ -1,4 +1,5 @@
 import { NestFactory } from '@nestjs/core'
+import 'reflect-metadata'
 
 import { EnvConfig, EnvValidator } from '@config/env'
 import { AppModule } from '@modules/app.module'
