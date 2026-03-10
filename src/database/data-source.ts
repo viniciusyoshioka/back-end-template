@@ -3,7 +3,10 @@ import { DataSource } from 'typeorm'
 import { EnvConfig } from '@config/env'
 
 
-// TODO: Finish configuration https://typeorm.io/docs/drivers/postgres/#installation
+const applicationName = 'application-name'
+const connectTimeoutMS = 1000 * 10
+
+
 export const AppDataSource = new DataSource({
   type: 'postgres',
 
@@ -19,6 +22,8 @@ export const AppDataSource = new DataSource({
     'src/database/migrations/**/*.ts',
   ],
 
+  applicationName,
+  connectTimeoutMS,
   migrationsRun: false,
   poolSize: 32,
 
