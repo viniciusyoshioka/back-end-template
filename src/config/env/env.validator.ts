@@ -55,7 +55,7 @@ export class EnvValidator {
       throw new Error('Env "DATABASE_HOST" is required')
     }
 
-    const isValid = !databaseHost.length
+    const isValid = !!databaseHost.length
     if (!isValid) {
       throw new Error(`Value "${databaseHost}" is invalid for "DATABASE_HOST" env`)
     }
@@ -82,7 +82,7 @@ export class EnvValidator {
       throw new Error('Env "DATABASE_USERNAME" is required')
     }
 
-    const isValid = !databaseUsername.length
+    const isValid = !!databaseUsername.length
     if (!isValid) {
       throw new Error(
         `Value "${databaseUsername}" is invalid for "DATABASE_USERNAME" env`,
@@ -97,7 +97,7 @@ export class EnvValidator {
       throw new Error('Env "DATABASE_PASSWORD" is required')
     }
 
-    const isValid = !databasePassword.length
+    const isValid = !!databasePassword.length
     if (!isValid) {
       throw new Error(
         `Value "${databasePassword}" is invalid for "DATABASE_PASSWORD" env`,
