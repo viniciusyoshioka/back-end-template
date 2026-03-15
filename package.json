@@ -6,6 +6,9 @@
     "scripts": {
         "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
         "typecheck": "tsc --noEmit",
+        "migration:create": "typeorm migration:create",
+        "migration:run": "typeorm migration:run",
+        "migration:revert": "typeorm migration:revert",
         "build": "nest build",
         "start": "nest start",
         "start:dev": "nest start --watch",
