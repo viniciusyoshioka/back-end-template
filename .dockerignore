@@ -5,8 +5,7 @@ node_modules
 scripts
 test
 .dockerignore
-.env.development
-.env.test
+.env.*
 .env
 .gitignore
 Containerfile
