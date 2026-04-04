@@ -1,6 +1,6 @@
 import { DataSource } from 'typeorm'
 
-import { EnvConfig } from '@config/env'
+import { EnvConfig } from '@config/env/index.js'
 
 
 const applicationName = 'application-name'

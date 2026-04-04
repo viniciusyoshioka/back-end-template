@@ -1,8 +1,8 @@
 import { NestFactory } from '@nestjs/core'
 import 'reflect-metadata'
 
-import { EnvConfig, EnvValidator } from '@config/env'
-import { AppModule } from '@modules/app.module'
+import { EnvConfig, EnvValidator } from '@config/env/index.js'
+import { AppModule } from '@modules/app.module.js'
 
 
 async function bootstrap() {
